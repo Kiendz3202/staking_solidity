@@ -16,8 +16,15 @@ module.exports = {
 			chainId: 5,
 			accounts: [process.env.PRIVATE_KEY],
 		},
+		bsctest: {
+			url: 'https://data-seed-prebsc-1-s1.binance.org:8545',
+			accounts: [process.env.PRIVATE_KEY],
+			chainId: 97,
+			gasPrice: 10000000000,
+			blockGasLimit: 1000000,
+		},
 	},
 	etherscan: {
-		apiKey: process.env.ETHERSCAN_API_KEY,
+		apiKey: 'HUEBJFAH9KHYDIGPJSGGEJ839NA2NP6KDX',
 	},
 };

@@ -5,7 +5,7 @@ const main = async () => {
 	console.log('Deploying token MK....');
 	const TokenContract = await ethers.getContractFactory('MK');
 	const MK = await TokenContract.deploy();
-	// await MK.deployed();
+	await MK.deployed();
 	console.log(MK.address);
 
 	const StakingContract = await ethers.getContractFactory('StakeMK');
